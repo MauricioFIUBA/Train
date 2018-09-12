@@ -119,7 +119,7 @@ int main(void)
     scanf("%c", &lineSeek);
     while(getchar() != '\n');
     printf("%s\n", "Cual es el nombre de la estacion?:");
-    fgets(seek, 50,stdin);
+    fgets(seek, 50,stdin); /*Tengo que arreglar esto O arreglar el flujo de informacion superior*/
     buscado = SerchStation(subway, lineSeek, seek, amount);
     printf("La estacion encontrada es de la linea: %c y tienen de nombre: %s", buscado->line, buscado->name);
 
