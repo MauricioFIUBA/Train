@@ -19,7 +19,8 @@
 
 *Plaza Miserere
 
-combinacion = Once
+@Once
++H
 
 *Alberti
 
@@ -31,15 +32,18 @@ combinacion = Once
 
 *Lima
 
-combinacion = Avenida de Mayo
+@Avenida de Mayo
++C
 
 *Piedras
 
 *Peru
 
-combinacion = Catedral
+@Catedral
++D
 
-combinacion = Bolivar
+@Bolivar
++E
 
 *Plaza de Mayo
 
@@ -67,7 +71,8 @@ combinacion = Bolivar
 
 *Puyrredon
 
-combinacion = Corrientes
+@Corrientes
++H
 
 *Pasteur
 
@@ -77,9 +82,11 @@ combinacion = Corrientes
 
 *Carlos Pellegrini
 
-combinacion = 9 de Julio
+@9 de Julio
++D
 
-combinacion = Diagonal Norte
+@Diagonal Norte
++C
 
 *Florida
 
@@ -93,19 +100,23 @@ combinacion = Diagonal Norte
 
 *Independencia
 
-combinacion = Independencia
+@Independencia
++E
 
 *Mariano Moreno
 
 *Avenida de Mayo
 
-combinacion = Lima
+@Lima
++A
 
 *Diagonal Norte
 
-combinacion = Carlos Pellegrini
+@Carlos Pellegrini
++B
 
-combinacion = 9 de Julio
+@9 de Julio
++D
 
 *Lavalle
 
@@ -137,7 +148,8 @@ combinacion = 9 de Julio
 
 *Puyrredon
 
-combinacion = Santa Fe
+@Santa Fe
++H
 
 *Facultad de Medicina
 
@@ -147,15 +159,19 @@ combinacion = Santa Fe
 
 *9 de Julio
 
-combinacion = Carlos Pellegrini
+@Carlos Pellegrini
++B
 
-combinacion = Diagonal Norte
+@Diagonal Norte
++C
 
 *Catedral
 
-combinacion = Peru
+@Peru
++A
 
-combinacion = Bolivar
+@Bolivar
++E
 
 #E
 
@@ -177,7 +193,8 @@ combinacion = Bolivar
 
 *Jujuy
 
-combinacion = Humberto Primo
+@Humberto Primo
++H
 
 *Pichincha
 
@@ -187,15 +204,18 @@ combinacion = Humberto Primo
 
 *Independencia
 
-combinacion = Independencia
+@Independencia
++C
 
 *Belgrano
 
 *Bolivar
 
-combinacion = Peru
+@Peru
++A
 
-combinacion = Catedral
+@Catedral
++D
 
 #H
 
@@ -209,22 +229,26 @@ combinacion = Catedral
 
 *Humberto Primo
 
-combinacion = Jujuy
+@Jujuy
++E
 
 *Venezuela
 
 *Once
 
-combinacion = Plaza Miserere
+@Plaza Miserere
++A
 
 *Corrientes
 
-combinacion = Pueyrredon
+@Pueyrredon
++B
 
 *Cordoba
 
 *Santa Fe
 
-combinacion = Pueyrredon
+@Pueyrredon
++D
 
 *Las Heras
