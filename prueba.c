@@ -9,7 +9,7 @@ size_t NumberLine(FILE **archive)
 {
     size_t numberLine = 0;
     char search = '#';
-    if( ((*archive) = fopen("lineas_de_subte.txt","rt")) == NULL)
+    if( ((*archive) = fopen("Unix_lineas_de_subte.txt","rt")) == NULL)
     {
         fprintf(stderr, "%s\n", ERR);
     }
@@ -26,7 +26,7 @@ size_t NumberLine(FILE **archive)
 
 void FreeSubway(station_t ***subway, size_t amount)
 {
-    int line;
+    size_t line;
     station_t *clean, *iteration;
     for (line = 0; line < amount; line++)
     {
@@ -50,7 +50,7 @@ void FillSubway(station_t ***subway, FILE **archive,size_t amount)
     for (i = 0; i < amount; i++) {
         (*subway)[i]= (station_t*)malloc(sizeof(station_t));
     }
-    if( ((*archive) = fopen("lineas_de_subte.txt","rt")) == NULL)
+    if( ((*archive) = fopen("Unix_lineas_de_subte.txt","rt")) == NULL)
     {
         fprintf(stderr, "%s\n", ERR);
     }
@@ -80,7 +80,8 @@ void FillStations(station_t **subway, FILE **archive, char *check, char letterLi
         if((*check) == '*')
         {
             fgets(iteration->name, 50, (*archive));
-            UnixCorrection()
+            /*
+            UnixCorrection();*/
             printf("%s%s", PASE,iteration->name);
             iteration->line = letterLine;
             iteration->next = (station_t*)malloc(sizeof(station_t));
@@ -91,7 +92,7 @@ void FillStations(station_t **subway, FILE **archive, char *check, char letterLi
     iteration->next = NULL;
 }
 
-station_t* SerchStation(station_t **subway, char line, char* station, int amount)
+station_t* SerchStation(station_t **subway, char line, char* station, size_t amount)
 {
     station_t* search;
     size_t iterator;
@@ -101,7 +102,12 @@ station_t* SerchStation(station_t **subway, char line, char* station, int amount
         fprintf(stderr, "%s\n", ERR_SEARCH_LINE);
     }
     search = subway[iterator];
-    while(search && strcmp(search->name,station)) search = search->next;
+    while(search && strcmp(search->name,station))
+    {
+        search = search->next;
+
+    }
+
     return search;
 }
 int main(void)
@@ -110,7 +116,7 @@ int main(void)
     station_t **subway, *buscado;
     FILE* archive;
     char lineSeek;
-    char seek[] = "Inclan\r\n";
+    char seek[50];
 
     amount = NumberLine(&archive);
     printf("%i\n", amount);
@@ -120,8 +126,16 @@ int main(void)
     while(getchar() != '\n');
     printf("%s\n", "Cual es el nombre de la estacion?:");
     fgets(seek, 50,stdin); /*Tengo que arreglar esto O arreglar el flujo de informacion superior*/
-    buscado = SerchStation(subway, lineSeek, seek, amount);
-    printf("La estacion encontrada es de la linea: %c y tienen de nombre: %s", buscado->line, buscado->name);
+    if((buscado = SerchStation(subway, lineSeek, seek, amount)) == NULL)
+    {
+        fprintf(stderr, "%s\n", "No se pudo encontrar la estacion buscada");
+        return EXIT_FAILURE;
+    }
+    else
+    {
+        printf("La estacion encontrada es de la linea: %c y tienen de nombre: %s", buscado->line, buscado->name);
+    }
+
 
 
 

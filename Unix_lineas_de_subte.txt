@@ -1,0 +1,230 @@
+#A
+*San Pedrito
+
+*San Jose de Flores
+
+*Carabobo
+
+*Puan
+
+*Primera Junta
+
+*Acoyte
+
+*Rio de Janeiro
+
+*Castro Barros
+
+*Loria
+
+*Plaza Miserere
+
+combinacion = Once
+
+*Alberti
+
+*Pasco
+
+*Congreso
+
+*Senz Penia
+
+*Lima
+
+combinacion = Avenida de Mayo
+
+*Piedras
+
+*Peru
+
+combinacion = Catedral
+
+combinacion = Bolivar
+
+*Plaza de Mayo
+
+#B
+
+*Juan Manuel de Rosas
+
+*Echeverria
+
+*De los Incas Parque Chas
+
+*Tronador Va. Ortuzar
+
+*Federico Lacroze
+
+*Dorrego
+
+*Malabia O. Pugliese
+
+*Angel Gallardo
+
+*Medrano
+
+*Carlos Gardel
+
+*Puyrredon
+
+combinacion = Corrientes
+
+*Pasteur
+
+*Callao
+
+*Uruguay
+
+*Carlos Pellegrini
+
+combinacion = 9 de Julio
+
+combinacion = Diagonal Norte
+
+*Florida
+
+*L.N. Alem
+
+#C
+
+*Constitucion
+
+*San Juan
+
+*Independencia
+
+combinacion = Independencia
+
+*Mariano Moreno
+
+*Avenida de Mayo
+
+combinacion = Lima
+
+*Diagonal Norte
+
+combinacion = Carlos Pellegrini
+
+combinacion = 9 de Julio
+
+*Lavalle
+
+*General San Martin
+
+*Retiro
+
+#D
+
+*Congreso de Tucuman
+
+*Juramento
+
+*Jose Hernandez
+
+*Olleros
+
+*Ministro Carranza
+
+*Palermo
+
+*Plaza Italia
+
+*Scalabrini Ortiz
+
+*Bulnes
+
+*Aguero
+
+*Puyrredon
+
+combinacion = Santa Fe
+
+*Facultad de Medicina
+
+*Callao
+
+*Tribunales
+
+*9 de Julio
+
+combinacion = Carlos Pellegrini
+
+combinacion = Diagonal Norte
+
+*Catedral
+
+combinacion = Peru
+
+combinacion = Bolivar
+
+#E
+
+*Plaza de los Virreyes
+
+*Varela
+
+*Medalla Milagrosa
+
+*Emilio Mitre
+
+*Jose M. Moreno
+
+*Avenida La Plata
+
+*Boedo
+
+*General Urquiza
+
+*Jujuy
+
+combinacion = Humberto Primo
+
+*Pichincha
+
+*Entre Rios
+
+*San Jose
+
+*Independencia
+
+combinacion = Independencia
+
+*Belgrano
+
+*Bolivar
+
+combinacion = Peru
+
+combinacion = Catedral
+
+#H
+
+*Hospitales
+
+*Parque Patricios
+
+*Caseros
+
+*Inclan
+
+*Humberto Primo
+
+combinacion = Jujuy
+
+*Venezuela
+
+*Once
+
+combinacion = Plaza Miserere
+
+*Corrientes
+
+combinacion = Pueyrredon
+
+*Cordoba
+
+*Santa Fe
+
+combinacion = Pueyrredon
+
+*Las Heras

@@ -22,5 +22,5 @@ size_t NumberLine(FILE **);
 void FreeSubway(station_t ***, size_t);
 void FillSubway(station_t ***, FILE **, size_t);
 void FillStations(station_t**, FILE**, char*, char);
-station_t* SerchStation(station_t **, char, char*,int);
+station_t* SerchStation(station_t **, char, char*, size_t);
 #endif
