@@ -174,11 +174,11 @@ void FillCombination(station_t ***subway,  FILE **archive, size_t amount)
                 }
                 if(iteration->combination1 == NULL)
                 {
-                    iteration->combination1 = SerchStation((*subway), lineSearch, stationSearch, amount);
+                    iteration->combination1 = SearchStation((*subway), lineSearch, stationSearch, amount);
                 }
                 else if(iteration->combination2 == NULL)
                 {
-                    iteration->combination2 = SerchStation((*subway), lineSearch, stationSearch, amount);
+                    iteration->combination2 = SearchStation((*subway), lineSearch, stationSearch, amount);
                 }
                 else
                 {
@@ -193,7 +193,7 @@ void FillCombination(station_t ***subway,  FILE **archive, size_t amount)
 }
 
 
-station_t* SerchStation(station_t **subway, char line, char* station, size_t amount)
+station_t* SearchStation(station_t **subway, char line, char* station, size_t amount)
 {
     station_t* search;
     size_t iterator;
@@ -226,13 +226,13 @@ int main(void)
     /*BusquedaDeCaminoMasCorto()*/
 
 
-    /******Busqueda de una estacion y prueba de SerchStation (SOLO ES UNA PRUEBA)*****/
+    /******Busqueda de una estacion y prueba de SearchStation (SOLO ES UNA PRUEBA)*****/
     /*printf("%s\n", "En que linea del subte esta buscando?:");
     scanf("%c", &lineSeek);
     while(getchar() != '\n');
     printf("%s\n", "Cual es el nombre de la estacion?:");
     fgets(seek, 50,stdin);
-    if((buscado = SerchStation(subway, lineSeek, seek, amount)) == NULL)
+    if((buscado = SearchStation(subway, lineSeek, seek, amount)) == NULL)
     {
         fprintf(stderr, "%s\n", "No se pudo encontrar la estacion buscada");
         return EXIT_FAILURE;
@@ -242,6 +242,7 @@ int main(void)
         printf("La estacion encontrada es de la linea: %c y tienen de nombre: %s", buscado->line, buscado->name);
     }*/
     /*************************************************************/
+    /*FindShortWay(subway); Para el futuro*/
 
     FreeSubway(&subway, amount);
     return EXIT_SUCCESS;
