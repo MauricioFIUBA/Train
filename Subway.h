@@ -36,5 +36,5 @@ void FreeSubway(station_t ***, size_t);
 void FillSubway(station_t ***, FILE **, size_t);
 void FillStations(station_t**, FILE**, char*, char);
 void FillCombination(station_t ***,  FILE **, size_t);
-station_t* SerchStation(station_t **, char, char*, size_t);
+station_t* SearchStation(station_t **, char, char*, size_t);
 #endif
