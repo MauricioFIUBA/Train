@@ -10,9 +10,9 @@ Las tareas a realizar en este repositorio son:
 
   - ~~Pasar el texto a solo caracteres de Unix~~
   
-  - ~~ Leer el archivo y cargar las estaciones.~~
+  - ~~Leer el archivo y cargar las estaciones.~~
   
-  - ~~ Leer el archivo y cargar las combinaciones.~~
+  - ~~Leer el archivo y cargar las combinaciones.~~
   
   - Simular encontrar el canimo mas corto de las siguientes maneras:
     - Backtracking (A la fuerza bruta).
