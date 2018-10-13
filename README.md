@@ -1,10 +1,16 @@
 ![](http://www.fi.uba.ar/sites/default/files/Logo%20FIUBA.jpg)
+### Trabajo hecho por Mauricio Luca Cabrera
+
 
 # Train
 
-Codigo para ver cual es viaje mas corto entre puntos
+Este código fue creado con el objetivo de encontrar viaje mas corto entre dos estaciones de subtes.
 
-Primero tengo que crear una estacion de tren, y luego planep generar una respuesta por dos medios:
+Las tareas a realizar en este repositorio son:
 
-  - Backtracking (A la fuerza bruta).
-  - Algoritmo de camino mas rapido (usando la estrategia greedy).
+  ~~-Pasar el texto a solo caracteres de Unix~~
+  ~~- Leer el archivo y cargar las estaciones.~~
+  ~~- Leer el archivo y cargar las combinaciones.~~
+  - Simular encontrar el canimo mas corto de las siguientes maneras:
+    - Backtracking (A la fuerza bruta).
+    - Algoritmo de Dijkstra (usando la estrategia greedy).
