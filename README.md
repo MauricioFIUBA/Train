@@ -9,8 +9,11 @@ Este código fue creado con el objetivo de encontrar viaje mas corto entre dos e
 Las tareas a realizar en este repositorio son:
 
   ~~-Pasar el texto a solo caracteres de Unix~~
+  
   ~~- Leer el archivo y cargar las estaciones.~~
+  
   ~~- Leer el archivo y cargar las combinaciones.~~
+  
   - Simular encontrar el canimo mas corto de las siguientes maneras:
     - Backtracking (A la fuerza bruta).
     - Algoritmo de Dijkstra (usando la estrategia greedy).
