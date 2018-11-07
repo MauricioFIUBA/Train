@@ -198,9 +198,10 @@ station_t* SearchStation(station_t **subway, char line, char* station, size_t am
     station_t* search;
     size_t iterator;
     for (iterator = 0; iterator < amount && subway[iterator]->line != line; iterator++);
-    if(iterator > amount)
+    if(iterator >= amount)
     {
         fprintf(stderr, "%s\n", ERR_SEARCH_LINE);
+        return NULL;
     }
     search = subway[iterator];
     while(search && strcmp(search->name,station))
@@ -211,34 +212,34 @@ station_t* SearchStation(station_t **subway, char line, char* station, size_t am
     return search;
 }
 
-void AskForStation(station_t ***subway)
+station_t* AskForStation(station_t ***subway, int amount)
 {
-
-    /*char lineSeek;
-    char seek[50];*/
+    station_t *buscado;
+    char lineSeek;
+    char seek[50];
 
     /******Busqueda de una estacion y prueba de SearchStation (SOLO ES UNA PRUEBA)*****/
-    /*printf("%s\n", "En que linea del subte esta buscando?:");
+    printf("%s\n", ASK_LINE);
     scanf("%c", &lineSeek);
     while(getchar() != '\n');
-    printf("%s\n", "Cual es el nombre de la estacion?:");
+    printf("%s\n", ASK_STATION);
     fgets(seek, 50,stdin);
-    if((buscado = SearchStation(subway, lineSeek, seek, amount)) == NULL)
+    if((buscado = SearchStation(*subway, lineSeek, seek, amount)) == NULL)
     {
-        fprintf(stderr, "%s\n", "No se pudo encontrar la estacion buscada");
-        return EXIT_FAILURE;
+        fprintf(stderr, "%s\n", ERR_SEARCH_STATION);
+        return NULL;
     }
     else
     {
-        printf("La estacion encontrada es de la linea: %c y tienen de nombre: %s", buscado->line, buscado->name);
-    }*/
+        printf("%s %c %s %s", RESULT_LINE, buscado->line, RESULT_STATION, buscado->name);
+    }
     /*************************************************************/
-    /*FindShortWay(subway); Para el futuro*/
+    return buscado;
 }
 int main(void)
 {
     int amount;
-    station_t **subway/*, *buscado*/;
+    station_t **subway, *buscado;
     FILE* archive;
 
     amount = NumberLine(&archive);
@@ -246,8 +247,10 @@ int main(void)
 
     FillCombination(&subway, &archive, amount);
 
-    /*BusquedaDeCaminoMasCorto()*/
 
+    buscado = AskForStation(&subway, amount);
+    /*BusquedaDeCaminoMasCorto()*/
+    /*FindShortWay(subway, buscado); Para el futuro*/
 
 
 

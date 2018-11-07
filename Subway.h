@@ -19,6 +19,12 @@ typedef enum{
 #define ERR "Error: No se pudo abrir el archivo."
 #define ERR_SEARCH_LINE "Error: No se pudo encontrar la linea desada"
 #define ERR_SEARCH_STATION "Error: No se pudo encontrar la estacion desada"
+
+#define ASK_LINE "En que linea del subte esta buscando?:"
+#define ASK_STATION "Cual es el nombre de la estacion?:"
+
+#define RESULT_LINE "La estacion encontrada es de la linea:"
+#define RESULT_STATION "y tienen de nombre:"
 /*Constantes de soporte*/
 #define PASL "PASO POR ACA LA LINEA: "
 #define PASE "PASO POR ACA LA ESTACION: "
@@ -37,4 +43,5 @@ void FillSubway(station_t ***, FILE **, size_t);
 void FillStations(station_t**, FILE**, char*, char);
 void FillCombination(station_t ***,  FILE **, size_t);
 station_t* SearchStation(station_t **, char, char*, size_t);
+station_t* AskForStation(station_t ***, int);
 #endif
