@@ -210,21 +210,12 @@ station_t* SearchStation(station_t **subway, char line, char* station, size_t am
 
     return search;
 }
-int main(void)
+
+void AskForStation(station_t ***subway)
 {
-    int amount;
-    station_t **subway/*, *buscado*/;
-    FILE* archive;
+
     /*char lineSeek;
     char seek[50];*/
-
-    amount = NumberLine(&archive);
-    FillSubway(&subway, &archive, amount);
-
-    FillCombination(&subway, &archive, amount);
-
-    /*BusquedaDeCaminoMasCorto()*/
-
 
     /******Busqueda de una estacion y prueba de SearchStation (SOLO ES UNA PRUEBA)*****/
     /*printf("%s\n", "En que linea del subte esta buscando?:");
@@ -243,6 +234,22 @@ int main(void)
     }*/
     /*************************************************************/
     /*FindShortWay(subway); Para el futuro*/
+}
+int main(void)
+{
+    int amount;
+    station_t **subway/*, *buscado*/;
+    FILE* archive;
+
+    amount = NumberLine(&archive);
+    FillSubway(&subway, &archive, amount);
+
+    FillCombination(&subway, &archive, amount);
+
+    /*BusquedaDeCaminoMasCorto()*/
+
+
+
 
     FreeSubway(&subway, amount);
     return EXIT_SUCCESS;
